@@ -63,7 +63,7 @@ def fail_safe(temperature:float, neutrons_produced_per_second:int, threshold:flo
     #define variables
 
     neutron_temp:float = temperature * neutrons_produced_per_second
-    low_threshold:float = .9
+    low_threshold:float = 0.9
     high_threshold:float = 1.1
 
     if (neutron_temp) < (threshold * low_threshold): return "LOW"

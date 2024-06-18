@@ -69,3 +69,5 @@ def fail_safe(temperature:float, neutrons_produced_per_second:int, threshold:flo
     if (neutron_temp) < (threshold * low_threshold): return "LOW"
     if (threshold * low_threshold) <= neutron_temp <= (threshold * high_threshold): return "NORMAL"
     if neutron_temp > (threshold * high_threshold): return "DANGER"
+
+    return "WTF"
