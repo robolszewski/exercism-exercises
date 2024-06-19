@@ -10,4 +10,13 @@ def steps(number):
 
     Given a number n, return the number of steps required to reach 1
     """
+    #define variables
+    i = 0
+
+    while number != 1:
+        i += 1
+        if number % 2 = 0: number = number / 2
     
+        else: number = (number * 3) + 1
+
+    return i
