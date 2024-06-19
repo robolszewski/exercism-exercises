@@ -13,10 +13,15 @@ def steps(number):
     #define variables
     i = 0
 
+    #test for valid input value
+    if number <= 0:
+        raise ValueError('Only positive integers are allowed')
+
     while number != 1:
+        if number % 2 == 0: 
+            number = number // 2
+        else: 
+            number = (number * 3) + 1
         i += 1
-        if number % 2 == 0: number = number / 2
-    
-        else: number = (number * 3) + 1
 
     return i
