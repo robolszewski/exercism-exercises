@@ -8,15 +8,11 @@ def is_armstrong_number(number:int) -> bool:
     param: number integer: The number to be tested for "Armstrongness"
     return: bool: Is the number supplied an Armstrong number?
     """
-    #define variables
-    num_str:str = ""
-    num_digits:int = 0
-    original_number:int = number
-
-    num_str = str(number) 
-    num_digits = len(num_str)
-
-    int(i) for i in str(number)
-
-
-    pass
+    #Define Variables
+    number_string = str(number)
+    total_sum = 0
+    
+    for digit in number_string:
+        total_sum += int(digit) ** len(number_string)
+    
+    return total_sum == number

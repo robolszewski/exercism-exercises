@@ -4,8 +4,8 @@ def is_triangle(sides) -> bool:
     :param sides: array int - number of sides
     :return: bool - Returns if supplied data defines a valid triangle.
     
-     This function checks whether the given side lengths form a valid triangle. It returns True if they do and False
-     otherwise. Triangle as defined by all the following being true: a + b ≥ c | b + c ≥ a | a + c ≥ b | all sides must have positive nonzero values.
+     This function checks whether the given side lengths form a valid triangle. It returns True if they do and False         
+     otherwise. Triangle as defined by all the following being true: a + b ≥ c | b + c ≥ a | a + c ≥ b | all sides must have        positive nonzero values.
     """
 
     #define variables
@@ -25,7 +25,7 @@ def equilateral(sides) -> bool:
     :param sides: array int - number of sides
     :return: bool - Returns if supplied data defines equilateraltriangle.
     
-    This function determines whether the triangle is equilateral. It relies on the is_triangle function to ensure the input is a valid triangle.
+    This function determines whether the triangle is equilateral. It relies on the is_triangle function to ensure the input is     a valid triangle.
     """
     #define variable(s)
     side_a: float = 0
@@ -44,7 +44,7 @@ def isosceles(sides) -> bool:
     :param sides: array int - number of sides
     :return: bool - Returns if supplied data defines an isosceles triangle.
     
-    It uses the is_triangle function to validate the input. Dependent on is_triangle() and if any two sides are equal. Note that for the purposes of this we do not use the exclusive definition of isoceles (i.e. iff two sides equal)
+    It uses the is_triangle function to validate the input. Dependent on is_triangle() and if any two sides are equal. Note        that for the purposes of this we do not use the exclusive definition of isoceles (i.e. iff two sides equal)
     """
     #define variable(s)
     side_a: float = 0
