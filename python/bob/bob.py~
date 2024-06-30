@@ -12,21 +12,13 @@ Bob only ever answers one of five things:
     "Whatever." This is what he answers to anything else.
 
 """
-    #strip spaces from string
-    hey_bob = hey_bob.strip()
 
-    #check to see if response is blank
+    
     if hey_bob == "" or hey_bob.isspace():
         return "Fine. Be that way!";
-
-    #Check to see if a question is being YELLED at Bob
     if hey_bob.isupper() and hey_bob[-1] == "?":
         return "Calm down, I know what I'm doing!"; 
-    
-    #Check to see if Bob is being yelled at
     if hey_bob.isupper(): 
         return "Whoa, chill out!"
-    
-    #Check to see if a question is being asked of Bob
     if hey_bob[-1] == "?": return "Sure.";
     return "Whatever."
